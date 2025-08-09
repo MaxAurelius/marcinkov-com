@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcin Kov - The Intelligence Layer for the Space Economy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    /* * ==========================================
+     * CORE & MOBILE-FIRST STYLES
+     * ==========================================
+     * Base styles are designed for small screens.
+     * We use a 'min-width' media query to add
+     * enhancements for larger screens. This is a 
+     * more robust and modern approach.
+     * ==========================================
+    */
+    :root {
+        --background-dark: #0a192f;
+        --text-primary: #ccd6f6;
+        --text-secondary: #8892b0;
+        --heading-color: #e6f1ff;
+        --accent-color: #64ffda;
+        --banner-bg: #1d2d44;
+        --border-color: #233554;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--background-dark);
+        color: var(--text-primary);
+        line-height: 1.6;
+        font-size: 16px; 
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1.5rem; /* More generous side padding for mobile */
+    }
+
+    main {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Lora', serif;
+        color: var(--heading-color);
+        line-height: 1.2;
+    }
+
+    h1 { font-size: 1.8rem; } /* Slightly reduced for better mobile fit */
+    h2 { font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 1.5rem; }
+
+    p, li {
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary); /* Moved from .project-item p for consistency */
+    }
+    
+    section#thesis p, section#thesis li {
+        color: var(--text-primary); /* Thesis text should be primary */
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    li::before {
+        content: '■';
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+        color: var(--accent-color);
+        font-size: 1rem;
+    }
+
+    a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .author-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    .author-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--text-secondary);
+    }
+    .author-info h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .author-info p {
+        margin: 0;
+        color: var(--text-secondary);
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--border-color);
+        margin: 2.5rem 0;
+    }
+
+    .project-item {
+        margin-bottom: 2rem;
+    }
+    .project-item h3 {
+        font-size: 1.125rem;
+        color: var(--heading-color);
+        margin-bottom: 0.25rem;
+    }
+    .project-item p {
+        margin: 0;
+        font-size: 1rem; /* Normalized font size */
+    }
+    
+    footer {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 0.875rem; /* 14px */
+        color: var(--text-secondary);
+    }
+
+    /* * ==========================================
+     * THE BANNER: MOBILE-FIRST REDESIGN
+     * ==========================================
+     * On mobile, a corner banner is poison. It covers content and is hard to use.
+     * The high-impact approach is a full-width bottom bar. It's intentional,
+     * clear, and a standard, effective UX pattern. It feels less like an ad
+     * and more like a part of the app's chrome.
+     * ==========================================
+    */
+    #cofounder-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--banner-bg);
+        padding: 1rem 1.5rem;
+        border-top: 1px solid var(--border-color);
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+        z-index: 50;
+        
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        /* Hide banner off-screen initially for the slide-up animation */
+        opacity: 0;
+        transform: translateY(100%); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    #cofounder-banner.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .banner-icon {
+        flex-shrink: 0;
+        color: var(--accent-color);
+    }
+    .banner-text p {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.9375rem; /* 15px */
+        line-height: 1.4;
+        color: var(--text-primary);
+    }
+    .banner-text a {
+        font-size: 0.9375rem; /* 15px */
+        font-weight: bold;
+    }
+    #close-banner {
+        position: absolute;
+        top: 0.5rem; /* Adjusted for easier tapping */
+        right: 0.5rem;
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        font-size: 1.75rem;
+        line-height: 1;
+        cursor: pointer;
+        padding: 0.5rem; /* Larger tap area */
+    }
+
+    /* * ==========================================
+     * DESKTOP & LARGER SCREEN OVERRIDES
+     * ==========================================
+     * At 768px and up, we have enough space to revert to
+     * a more traditional layout with larger text and
+     * the corner pop-up banner.
+     * ==========================================
+    */
+    @media (min-width: 768px) {
+        body {
+            font-size: 18px; /* Slightly larger base font for desktop */
+            padding: 4rem 1rem;
+        }
+
+        h1 { font-size: 2.25rem; }
+        h2 { font-size: 1.75rem; margin-top: 3rem; }
+
+        .author-icon {
+            width: 60px;
+            height: 60px;
+        }
+        .author-info h1 {
+            font-size: 1.75rem;
+        }
+        
+        hr { 
+            margin: 3rem 0; 
+        }
+
+        /* BANNER: Revert to corner pop-up style for desktop */
+        #cofounder-banner {
+            bottom: 1.5rem;
+            left: 1.5rem;
+            width: auto;
+            max-width: 350px; /* Slightly more width */
+            border-radius: 8px;
+            border: 1px solid var(--border-color); /* Add border back */
+            border-top: none; /* Remove the mobile top border */
+            padding: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            
+            /* Revert to the desktop slide-in-from-bottom-left animation */
+            transform: translateY(20px);
+        }
+        #cofounder-banner.visible {
+            transform: translateY(0);
+        }
+        #close-banner {
+            top: 0.25rem;
+            right: 0.25rem;
+            font-size: 1.5rem;
+            padding: 0.25rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <main>
+        <header class="author-header">
+            <img src="Napoleon.jpg" alt="Marcin Kov" class="author-icon">
+            <div class="author-info">
+                <h1>Marcin Kov</h1>
+                <p>Physicist, Engineer, Founder</p>
+            </div>
+        </header>
+
+        <section id="thesis">
+            <h2>Thesis</h2>
+            <p>The space industry builds million-dollar satellites, ground stations - but operates with an incomplete map of how they are all connected and used. This hardware is rapidly becoming a commodity. The durable advantage isn't owning the physical assets, but understanding the entire network: who is communicating with what, where, and when.</p>
+            <p>This lack of clarity is a critical vulnerability. Companies waste capital on redundant infrastructure. Investors mis-price public companies. Governments operate with strategic blind spots. We are building the definitive map of ground-to-space communications to fix this.</p>
+            
+            <ul>
+                <li><strong>For Western Nations:</strong> A clear, unclassified, and continuously updated view of the strategic landscape in space.</li>
+                <li><strong>For Operators & Investors:</strong> Capital is deployed based on real network usage, not speculation. The best services win, not just those with the most hardware in orbit.</li>
+                <li><strong>For Customers:</strong> A persistent information advantage over competitors who are still guessing about network capacity and activity.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="work">
+            <h2>Proof of Work</h2>
+            <div class="project-item">
+                <h3>ESA: Complex Systems Operations</h3>
+                <p>Managed mission control for live satellite operations, including next-generation optical and quantum communication payloads.</p>
+            </div>
+            <div class="project-item">
+                <h3>Astrolight: Predictive Modeling & Simulation</h3>
+                <p>Developed numerical models to simulate the complex physics of atmospheric turbulence on free-space laser communications.</p>
+            </div>
+            <div class="project-item">
+                <h3>Exotrail & CNRS: Satellite Systems Engineering</h3>
+                <p>Designed and built flight-ready electronics and real-time operating systems for satellites.</p>
+            </div>
+             <div class="project-item">
+                <h3>ESA: Advanced Technical Training</h3>
+                <p>Developed and delivered the foundational curriculum on optical and quantum communications at ESA.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Co-founder</h2>
+            <p>I am looking for one. A world-class engineer or operator who moves fast and has a history of building difficult things. If this is you, let's talk.</p>
+            <p>Investors who fund foundational infrastructure can reach me via <a href="mailto:your.email@example.com">Email</a> or <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+        </section>
+        
+        <footer>
+            &copy; 2025 Marcin Kov
+        </footer>
+
+    </main>
+
+    <div id="cofounder-banner">
+        <div class="banner-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        <div class="banner-text">
+            <p>Seeking a co-founder to build the definitive intelligence layer for space.</p>
+            <a href="#contact">Read the brief &rarr;</a>
+        </div>
+        <button id="close-banner" aria-label="Close">&times;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const banner = document.getElementById('cofounder-banner');
+            const closeButton = document.getElementById('close-banner');
+
+            // Check if the banner was already dismissed in this session
+            if (sessionStorage.getItem('bannerDismissed')) {
+                banner.style.display = 'none';
+                return;
+            }
+
+            // Show the banner after a delay
+            setTimeout(() => {
+                banner.classList.add('visible');
+            }, 2500); // 2.5 second delay
+
+            // Handle closing the banner
+            closeButton.addEventListener('click', () => {
+                banner.style.display = 'none';
+                sessionStorage.setItem('bannerDismissed', 'true');
+            });
+        });
+    </script>
+
+</body>
+</html>
