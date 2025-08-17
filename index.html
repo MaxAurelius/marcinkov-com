@@ -22,105 +22,129 @@
 
     <main>
         <header class="author-header">
-            <img src="Napoleon.jpg" alt="Marcin Kov" class="author-icon">
+            <img src="images/Napoleon.jpg" alt="Marcin Kov" class="author-icon">
             <div class="author-info">
                 <h1>Marcin Kov</h1>
-                <p>Technical Diligence & Strategy</p>
+                <p>Physicist & Engineer | Building Tools for Complex Systems</p>
             </div>
         </header>
 
         <section id="thesis">
             <h2>Thesis</h2>
             <blockquote style="border-left: 3px solid var(--accent-color); padding-left: 1.5rem; margin-left: 0; font-size: 1.1em; font-style: italic;">
-                The greatest threat to capital in deep-tech isn't market risk; it's bad physics. Before you deploy capital, I provide the diligence to determine if the science is sound.
-            </blockquote>  
-
-            <p style="font-style: italic; color: #8892b0; font-size: 0.9em; margin: 1.5rem 0 2rem 0;">This focus on operational reality is central to my work. My research on a new model for GSaaS network selection is currently under peer review for the 2026 IEEE Aerospace Conference.
-</p>
-
-            <!-- <p style="color: var(--text-secondary); margin-top: 2rem;"> That principle informs my long-term view on the space economy:</p> -->
-            
-            <p>The space industry builds million-dollar satellites and ground stations but operates with an incomplete map of how they are all connected and used. This hardware is rapidly becoming a commodity. The durable advantage isn't owning the physical assets, but understanding the entire network: who is communicating with what, where, and when.</p>
-            <p>This lack of clarity is a critical vulnerability. Companies waste capital on redundant infrastructure. Investors mis-price public companies. Governments operate with strategic blind spots. We are building the definitive map of ground-to-space communications to fix this.</p>
-            
-            <ul>
-                <li><strong>For National Security:</strong> Provide a persistent, unclassified view of the strategic communications landscape.</li>
-                <li><strong>For Capital Allocators:</strong> De-risk investment by replacing speculation with ground-truth data on network usage and capacity.</li>
-                <li><strong>For Market Leaders:</strong> Deliver the strategic edge needed to outmaneuver competitors and capture disproportionate value.</li>
-            </ul>
+                I build robust, data-driven tools to solve high-stakes operational problems. From ensuring the stability of a live satellite at ESA to architecting satellite ground station optimizer from scratch, my work is focused on turning complexity into clarity and delivering systems that work in the real world.            </blockquote>  
+            <p style="font-style: italic; color: #8892b0; font-size: 0.9em; margin: 1.5rem 0 2rem 0;">This focus on operational reality is central to my work. My research on a new model for GSaaS network selection is currently under peer review for the 2026 IEEE Aerospace Conference.</p>
         </section>
 
         <hr>
 
-        <section id="work">
-            <h2>Proof of Work</h2>
-            <div class="project-item">
-                <h3>ESA: High-Stakes Operations</h3>
-                <p>Identified mission-critical failure points in next-generation multi-million $ satellite systems during live flight operations.</p>
-            </div>
-            <div class="project-item">
-                <h3>Predictive Modeling & Simulation</h3>
-                <p>Differentiated viable physics from investor hype by modeling the edge-case performance limits for novel technologies.</p>
-            </div>
-            <div class="project-item">
-                <h3>Satellite Systems Engineering</h3>
-                <p>Provided ground-truth assessments of hardware risk, production timelines, and supply chain vulnerabilities.</p>
-            </div>
-             <div class="project-item">
-                <h3>Technical Intelligence Translation</h3>
-                <p>Translated complex quantum & optical physics into actionable intelligence for senior technical staff and leadership.</p>
-            </div>
-            <div class="project-item">
-                    <h3>Peer-Reviewed Methodology</h3>
-                    <p>Authored a new model for GSaaS network selection that bridges the gap between theoretical optimality and operational reality (IEEE AeroConf Submission, In Review).</p>
-            </div>
-        </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
         
+        <div class="portfolio-card">
+            <h3>find-gs.com | Ground Segment Optimizer</h3>
+            <p class="project-role">Founder & Architect</p>
+
+
+            <iframe 
+                class="project-video"
+                src="https://www.youtube.com/embed/L2Ogryy-M6I?si=q8LyuqXKIDrOKOXd" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        
+            <!-- <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data Dashboard UI" class="project-image"> -->
+        
+            <p><strong>The Problem:</strong> Satellite operators make multi-million dollar procurement decisions based on complex spreadsheets and guesswork, not mathematical proof. This results in wasted budgets and significant loss of potential data throughput.</p>
+            <p><strong>My Solution:</strong> I architected and built an optimization engine that translates raw mission parameters (TLEs, budget, data needs) into a provably optimal ground segment plan. I engineered the core integer programming algorithm in Python, allowing users to instantly solve for maximum data throughput on a fixed budget or minimum cost for a set data quota.</p>
+        
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Integer Programming</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Celery</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">GCP</span>
+            </div>
+        
+            <div class="project-links">
+                <a href="https://find-gs.com" target="_blank" rel="noopener noreferrer">Live Site &rarr;</a>
+            </div>
+        </div>
+    
+        <div class="portfolio-card">
+            <h3>Mission Control Operations & Tooling | European Space Agency (ESA)</h3>
+            <p class="project-role">Mission Control Engineer (First Responder)</p>
+
+
+            <iframe 
+                class="project-video"
+                src="https://www.youtube.com/embed/sbW8o1tk_Mc?si=B6rwoGBoeDNfR0V_" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        
+            <!-- <img src="https://images.unsplash.com/photo-1614741118884-62ac6cba747d?q=80&w=2070&auto.format&fit=crop" alt="Satellite Telemetry Data" class="project-image"> -->
+            
+            <p><strong>The Problem:</strong> On a live satellite mission, the time between anomaly detection and resolution is critical. As a 24/7 first responder, I was the human firewall preventing minor faults from cascading into mission-threatening failures.</p>
+            <p><strong>My Solution:</strong> I was responsible for the initial triage, root cause analysis, and resolution of all real-time incidents across the full stack-from Linux servers to embedded flight software. To accelerate this process, I designed and built Python and shell scripts to automate key diagnostic checks, reducing manual intervention and shortening our team's response time to ensure >99.9% uptime.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Incident Response</span>
+                <span class="tech-tag">Root Cause Analysis</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Real-Time Systems</span>
+            </div>
+        <div class="project-links">
+                <a href="https://opssat.esa.int/" target="_blank" rel="noopener noreferrer">OPS-SAT &rarr;</a>
+            </div>
+        </div>
+    
+        <div class="portfolio-card">
+        <h3>Satellite Control Board | CNRS</h3>
+        <p class="project-role">Satellite Electronics Engineer</p>
+
+        <img src="images/cnrs-pcb.png" alt="Custom satellite PCB design" class="project-image project-image-square">
+
+        
+        <p><strong>The Problem:</strong> A satellite communication subsystem required a new, reliable control board to manage its optical payload and interface with the main onboard computer.</p>
+        <p><strong>My Solution:</strong> I owned the end-to-end hardware development. I designed the schematic and multi-layer PCB in KiCAD, sourced components, and wrote the fault-tolerant embedded C firmware for the STM32 microcontroller.</p>
+            
+        <div class="tech-stack">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">RTOS</span>
+            <span class="tech-tag">KiCAD</span>
+            <span class="tech-tag">PCB Design</span>
+            <span class="tech-tag">Embedded Systems</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/MaxAurelius" target="_blank" rel="noopener noreferrer">View Firmware &rarr;</a>
+        </div>
+    </div>
+        
+    </section>
+        
+
         <hr>
-
-         <!-- <section id="cofounder">
-            <h2>Co-founder</h2>
-            <p>I am looking for one partner to build this with. A world-class engineer or operator who moves fast, has a history of building difficult things, and finds the above strategy logical. If this is you, use the investor channel and state your intent.</p>
-        </section> -->
-
-        <!-- <hr> -->
+        <section id="research">
+            <h2>Publications & Research</h2>
+            <div class="project-item">
+                <h3>A New Model for GSaaS Network Selection</h3>
+                <p>Authored a new model that bridges the gap between theoretical optimality and operational reality for satellite ground station procurement. <strong>(In peer review, 2026 IEEE Aerospace Conference)</strong></p>
+            </div>
+        </section>
         
         <footer>
             &copy; 2025 Marcin Kov
         </footer>
     </main>
 
-    <!-- <div id="cofounder-banner">
-        <div class="banner-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </div>
-        <div class="banner-text">
-            <p>Seeking co-founder to build the definitive intelligence layer for space.</p>
-            <a href="#cofounder">Read the brief &rarr;</a>
-        </div>
-        <button id="close-banner" aria-label="Close">&times;</button>
-    </div> -->
-
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const banner = document.getElementById('cofounder-banner');
-            if(!banner) return;
-            const closeButton = document.getElementById('close-banner');
-
-            if (sessionStorage.getItem('bannerDismissed')) {
-                banner.style.display = 'none';
-                return;
-            }
-
-            setTimeout(() => {
-                banner.classList.add('visible');
-            }, 2500);
-
-            closeButton.addEventListener('click', () => {
-                banner.style.display = 'none';
-                sessionStorage.setItem('bannerDismissed', 'true');
-            });
-        });
-    </script> -->
 </body>
 </html>
