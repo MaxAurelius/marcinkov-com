@@ -110,8 +110,18 @@
         <h3>Satellite Control Board | CNRS</h3>
         <p class="project-role">Satellite Electronics Engineer</p>
 
-        <img src="images/cnrs-pcb.png" alt="Custom satellite PCB design" class="project-image project-image-square">
-
+        <!-- <img src="images/cnrs-pcb.png" alt="Custom satellite PCB design" class="project-image project-image-square"> -->
+        
+        <div class="carousel-container" id="pcb-carousel">
+            <div class="carousel-slide">
+                <img src="images/cnrs-pcb-back.png" alt="PCB Assembled" class="carousel-image">
+                <img src="images/cnrs-pcb-front.jpg" alt="PCB Schematic in KiCAD" class="carousel-image">
+                <img src="images/pcb-debugging-night-dorm.jpg" alt="Night PCB Debuggin in a dorm" class="carousel-image">
+            </div>
+            <button class="carousel-btn prev-btn">&larr;</button>
+            <button class="carousel-btn next-btn">&rarr;</button>
+            <div class="carousel-dots"></div>
+        </div>
         
         <p><strong>The Problem:</strong> A satellite communication subsystem required a new, reliable control board to manage its optical payload and interface with the main onboard computer.</p>
         <p><strong>My Solution:</strong> I owned the end-to-end hardware development. I designed the schematic and multi-layer PCB in KiCAD, sourced components, and wrote the fault-tolerant embedded C firmware for the STM32 microcontroller.</p>
@@ -130,21 +140,135 @@
     </div>
         
     </section>
+
+    <hr>
+    <section id="research">
+        <h2>Publications & Research</h2>
+        <div class="project-item">
+            <h3>A New Model for GSaaS Network Selection</h3>
+            <p>Authored a new model that bridges the gap between theoretical optimality and operational reality for satellite ground station procurement. <strong>(In peer review, 2026 IEEE Aerospace Conference)</strong></p>
+        </div>
+    </section>
         
 
-        <hr>
-        <section id="research">
-            <h2>Publications & Research</h2>
-            <div class="project-item">
-                <h3>A New Model for GSaaS Network Selection</h3>
-                <p>Authored a new model that bridges the gap between theoretical optimality and operational reality for satellite ground station procurement. <strong>(In peer review, 2026 IEEE Aerospace Conference)</strong></p>
+    <hr>
+
+  <section id="lectures">
+    <h2>Lectures & Briefings</h2>
+    
+    <div class="portfolio-card">
+        <h3>Lecture Series: Space Optical & Quantum Communications</h3>
+        <p class="project-role">Core Curriculum</p>
+
+        <p>A three-part series covering the foundational principles and advanced applications of optical communications in space, from basic optics to quantum-secured satellite networks.</p>
+
+        <div class="lecture-accordion">
+            
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    1. Space Optics 101
+                </button>
+                <div class="accordion-content">
+                    <p>Fundamentals of optical systems design for the space environment. Covers basic lens and mirror systems, payload integration, and environmental hardening.</p>
+                    <iframe class="project-video" src="https://www.youtube.com/embed/videoseries?list=PL-LT-MbyqAzDk2FVAQOMsYcGz7-Jx5hYm" title="Space Optics 101 Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
-        </section>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    2. Free-Space Optical Communications
+                </button>
+                <div class="accordion-content">
+                    <p>Engineering analysis of laser communications. Topics include link budget analysis, atmospheric scintillation, beam pointing, acquisition, and tracking (PAT).</p>
+                    <iframe class="project-video" src="https://www.youtube.com/embed/HjQ4MwvmaGU?si=X6apvR5QHTUaVl0W" title="Free Space Optical Communications Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    3. Quantum Optical Comms for Satellites
+                </button>
+                <div class="accordion-content">
+                    <p>Advanced protocols for secure communication. Focuses on Quantum Key Distribution (QKD), single-photon detectors, and the engineering challenges of deploying quantum payloads.</p>
+                    <iframe class="project-video" src="https://www.youtube.com/embed/kuZdSQfwl_k?si=eJu_Chbjn5nYozlQ" title="Quantum Optical Communications for Satellites Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
         
-        <footer>
-            &copy; 2025 Marcin Kov
-        </footer>
+
+    <footer>
+        &copy; 2025 Marcin Kov
+    </footer>
     </main>
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const currentlyActiveHeader = document.querySelector('.accordion-header.active');
+                if (currentlyActiveHeader && currentlyActiveHeader !== this) {
+                    currentlyActiveHeader.classList.remove('active');
+                    currentlyActiveHeader.nextElementSibling.style.maxHeight = null;
+                }
+
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    });
+
+
+     const initCarousel = (carouselId) => {
+        const carousel = document.querySelector(carouselId);
+        if (!carousel) return;
+
+        const slide = carousel.querySelector('.carousel-slide');
+        const images = carousel.querySelectorAll('.carousel-image');
+        const prevBtn = carousel.querySelector('.prev-btn');
+        const nextBtn = carousel.querySelector('.next-btn');
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+
+        let currentIndex = 0;
+        const totalImages = images.length;
+
+        // Create dots
+        for (let i = 0; i < totalImages; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('dot');
+            dot.addEventListener('click', () => {
+                goToSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+        const dots = dotsContainer.querySelectorAll('.dot');
+
+        const goToSlide = (index) => {
+            currentIndex = (index + totalImages) % totalImages; // Wrap around
+            slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+        };
+
+        nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+        prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+
+        goToSlide(0); // Initialize
+    };
+
+    // Initialize the PCB carousel
+    initCarousel('#pcb-carousel');
+
+    </script>
 
 </body>
 </html>

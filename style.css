@@ -1,4 +1,7 @@
-    /* ==========================================
+
+
+
+/* ==========================================
  * PORTFOLIO SECTION STYLES
  * ========================================== */
     .project-video
@@ -357,3 +360,131 @@
             padding: 0.25rem;
         }
     }
+
+
+    /* ==========================================
+ * ACCORDION STYLES
+ * ========================================== */
+.lecture-accordion {
+    margin-top: 1.5rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.5rem;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover, .accordion-header.active {
+    background-color: var(--banner-bg);
+}
+
+.accordion-header::after {
+    content: '+'; /* Plus icon */
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+    content: '-'; /* Minus icon */
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    padding: 0 0.5rem;
+}
+
+/* ==========================================
+ * CAROUSEL STYLES
+ * ========================================== */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 1 0 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(17, 34, 64, 0.7);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: var(--card-bg);
+}
+
+.prev-btn {
+    left: 10px;
+    border-radius: 50%;
+}
+
+.next-btn {
+    right: 10px;
+    border-radius: 50%;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(136, 146, 176, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--accent-color);
+}
