@@ -488,3 +488,61 @@
 .dot.active {
     background-color: var(--accent-color);
 }
+
+/* ==========================================
+ * BLOG LIST STYLES
+ * ========================================== */
+
+.blog-post {
+    padding-bottom: 2rem;
+}
+
+.blog-post h1 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.post-content p,
+.post-content li {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.post-content blockquote {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1.5rem;
+    margin-left: 0;
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.post-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-content li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-content li::before {
+    content: '■';
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 2.5rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
