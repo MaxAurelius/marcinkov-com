@@ -34,7 +34,7 @@
         <section id="thesis">
             <h2>Thesis</h2>
             <blockquote style="border-left: 3px solid var(--accent-color); padding-left: 1.5rem; margin-left: 0; font-size: 1.1em; font-style: italic;">
-                I build robust, data-driven tools to solve high-stakes operational problems. From ensuring the stability of a live satellite at ESA to architecting satellite ground station optimizer from scratch, my work is focused on turning complexity into clarity and delivering systems that work in the real world.            </blockquote>  
+                I build robust systems to solve high-stakes operational problems. From ensuring the stability of a live satellite at ESA to architecting satellite ground station optimizer from scratch, my work is focused on turning complexity into clarity and delivering systems that work in the real world.            </blockquote>  
         </section>
 
         <hr>
@@ -76,7 +76,7 @@
         </div>
     
         <div class="portfolio-card">
-            <h3>Mission Control Operations & Tooling | European Space Agency (ESA)</h3>
+            <h3>Mission-Critical Systems Integrity | European Space Agency (ESA)</h3>
             <p class="project-role">Mission Control Engineer (First Responder)</p>
 
 
@@ -100,7 +100,9 @@
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Bash</span>
                 <span class="tech-tag">Linux</span>
-                <span class="tech-tag">Real-Time Systems</span>
+                <span class="tech-tag">Real-Time Systems</span>                
+                <span class="tech-tag">Embedded C</span>
+                <span class="tech-tag">RTOS</span>
             </div>
         <div class="project-links">
                 <a href="https://opssat.esa.int/" target="_blank" rel="noopener noreferrer">View OPS-SAT site&rarr;</a>
@@ -136,10 +138,44 @@
             <span class="tech-tag">Embedded Systems</span>
         </div>
 
-        <div class="project-links">
+        <!-- <div class="project-links">
             <a href="https://github.com/MaxAurelius" target="_blank" rel="noopener noreferrer">View Firmware &rarr;</a>
-        </div>
+        </div> -->
     </div>
+
+    <div class="portfolio-card">
+        <h3>Full-Stack ML System | Real-Time Fraud Sandbox</h3>
+            <p class="project-role">Developer & Architect (1-Week Sprint)</p>
+            
+            <!-- <video class="project-video" autoplay loop muted playsinline poster="images/taktile-poster.jpg">
+                <source src="images/taktile-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+
+           <a href="https://www.taktile-engine.xyz" target="_blank" rel="noopener noreferrer">
+                 <img src="images/taktile-engine.png" 
+                      alt="Taktile Engine" 
+                      class="project-image"
+                      style="width:100%; height:auto; object-fit:contain; display:block; margin:2rem auto 1rem auto;">
+            </a>
+
+            <p><strong>The Problem:</strong> The challenge was to demonstrate the ability to design, build, and deploy a production-grade, full-stack machine learning system from scratch under an extreme deadline.</p>
+            <p><strong>My Solution:</strong> In one week, I built a complete, interactive sandbox for fraud detection. It features a visual drag-and-drop UI (Next.js, React Flow) for building decision logic, a backend engine (FastAPI) to execute it in real-time, and an ML pipeline (XGBoost) to train the fraud model. The entire system is containerized and deployable.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React Flow</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GCP</span>
+            </div>
+            
+            <div class="project-links">
+                <a href="https://www.taktile-engine.xyz" target="_blank" rel="noopener noreferrer">Live Site &rarr;</a>
+                <a href="https://github.com/MaxAurelius/taktile-engine" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
+            </div>
+        </div>
         
     </section>
 

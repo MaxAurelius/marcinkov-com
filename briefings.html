@@ -43,6 +43,10 @@
         width: 100%;
         padding: 2rem 1.5rem;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: calc(100vh - 150px); /* Adjust height based on nav/footer */
     }
     h1, h2, h3 {
         font-family: 'Lora', serif;
@@ -62,7 +66,8 @@
         margin: 2.5rem 0;
     }
     footer {
-        margin-top: 3rem;
+        margin-top: auto; /* Pushes footer to the bottom */
+        padding-top: 2rem;
         text-align: center;
         font-size: 0.875rem;
         color: var(--text-secondary);
@@ -92,7 +97,7 @@
     .main-nav ul { display: flex; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
 
     /* ==========================================
-     * BRIEFINGS PAGE STYLES - THE DEFINITIVE FIX
+     * BRIEFINGS PAGE STYLES - SINGLE BOX
      * ========================================== */
     .page-header {
         text-align: center;
@@ -107,11 +112,6 @@
         max-width: 550px;
         margin: 0 auto;
     }
-    .briefings-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
     .briefing-card {
         display: flex;
         flex-direction: column;
@@ -120,6 +120,9 @@
         border-radius: 8px;
         padding: 2rem;
         transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+        max-width: 550px; /* Constrain width for centering */
+        width: 100%;
+        margin: 0 auto; /* Center the card */
     }
     .briefing-card:hover {
         transform: translateY(-5px);
@@ -129,12 +132,11 @@
         margin: 0 0 1rem 0;
     }
     .briefing-card p {
-        margin: 0;
+        margin: 0 0 2rem 0;
         color: var(--text-secondary);
     }
     .card-footer {
         margin-top: auto;
-        padding-top: 2rem;
     }
     .card-footer .price {
         display: block;
@@ -165,18 +167,12 @@
      * ========================================== */
     @media (min-width: 768px) {
         body { font-size: 18px; }
-        main { max-width: 900px; padding: 4rem 1rem; }
+        main { padding: 4rem 1rem; }
         h2 { font-size: 1.75rem; }
-        .briefings-container {
-            flex-direction: row;
-            align-items: stretch;
-        }
-        .briefing-card {
-            flex: 1;
-        }
     }
 </style>
 </head>
+<body>
 
     <nav class="main-nav">
         <a href="index.html" class="nav-brand">Marcin Kov</a>
@@ -190,36 +186,20 @@
     <main>
         <section id="briefings">
             <div class="page-header">
-                <h2>Strategic & Investment Briefings</h2>
-                <p>Below are the two channels for engagement. </p>
-                <p>Choose the one that aligns with your objective.</p>
+                <h2>Technical Due Diligence</h2>
+                <p>For VCs vetting deep tech companies. No cost. No strings.</p>
             </div>
 
-            <div class="briefings-container">
-                <div class="briefing-card">
-                    <h3>Technical Due Diligence</h3>
-                    <p>For VCs and Angels deploying capital into space-tech. I provide rapid, confidential technical vetting of your potential investments to protect your capital from unviable technology and weak execution. A two-week sprint culminating in a "go/no-go" report.</p>
-                    
-                    <div class="card-footer">
-                        <!-- <span class="price">$750</span> -->
-                        <a href="https://tally.so/r/3xWb6k" target="_blank" rel="noopener noreferrer" class="button">Request a Scoping Call</a>
-                    </div>
-                </div>
-
-                <div class="briefing-card">
-                    <h3>find-gs.com: Strategic Capital</h3>
-                    <p>For funds and strategic partners interested in the long-term mission of find-gs.com - building the definitive intelligence layer for the space economy. This is not a general solicitation for investment.</p>
-                    
-                    <div class="card-footer">
-                        <span class="price">&nbsp;</span>
-                        <a href="https://tally.so/r/3qlX2g" target="_blank" rel="noopener noreferrer" class="button">Request Consideration</a>
-                    </div>
+            <div class="briefing-card">
+                <h3>Submit a Deck or Company</h3>
+                <p>I will provide a rigorous, confidential assessment of a pitch deck, business model or a technical stack. I will de-risk your investment. </p>
+                <div class="card-footer">
+                    <span class="price">Complimentary</span>
+                    <a href="https://tally.so/r/3xWb6k" target="_blank" rel="noopener noreferrer" class="button">Submit for Review</a>
                 </div>
             </div>
         </section>
-
-        <hr>
-
+        
         <footer>
             &copy; 2025 Marcin Kov
         </footer>
