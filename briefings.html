@@ -1,189 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marcin Kov - Briefings</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-    /* THIS CSS IS EMBEDDED TO PREVENT ANY BROWSER CACHING ERRORS */
-
-    /* ==========================================
-     * UNIVERSAL RESET & BOX MODEL FIX
-     * ========================================== */
-    *, *::before, *::after {
-        box-sizing: border-box;
-    }
-
-    /* ==========================================
-     * CORE & GLOBAL STYLES
-     * ========================================== */
-    :root {
-        --background-dark: #0a192f;
-        --text-primary: #ccd6f6;
-        --text-secondary: #8892b0;
-        --heading-color: #e6f1ff;
-        --accent-color: #64ffda;
-        --card-bg: #112240;
-        --border-color: #233554;
-    }
-    body {
-        font-family: 'Inter', sans-serif;
-        background-color: var(--background-dark);
-        color: var(--text-primary);
-        line-height: 1.6;
-        font-size: 16px; 
-        padding: 0;
-        margin: 0;
-    }
-    main {
-        max-width: 700px;
-        width: 100%;
-        padding: 2rem 1.5rem;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: calc(100vh - 150px); /* Adjust height based on nav/footer */
-    }
-    h1, h2, h3 {
-        font-family: 'Lora', serif;
-        color: var(--heading-color);
-        line-height: 1.2;
-    }
-    a {
-        color: var(--accent-color);
-        text-decoration: none;
-        font-weight: 500;
-    }
-    a:hover { text-decoration: underline; }
-    hr {
-        border: 0;
-        height: 1px;
-        background-color: var(--border-color);
-        margin: 2.5rem 0;
-    }
-    footer {
-        margin-top: auto; /* Pushes footer to the bottom */
-        padding-top: 2rem;
-        text-align: center;
-        font-size: 0.875rem;
-        color: var(--text-secondary);
-    }
-
-    /* ==========================================
-     * NAVIGATION BAR
-     * ========================================== */
-    .main-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.5rem;
-        background-color: var(--background-dark);
-        border-bottom: 1px solid var(--border-color);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    .main-nav .nav-brand {
-        font-family: 'Lora', serif;
-        font-weight: 700;
-        font-size: 1.25rem;
-        color: var(--heading-color);
-    }
-    .main-nav .nav-brand:hover { text-decoration: none; }
-    .main-nav ul { display: flex; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
-
-    /* ==========================================
-     * BRIEFINGS PAGE STYLES - SINGLE BOX
-     * ========================================== */
-    .page-header {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    .page-header h2 {
-        margin-bottom: 1rem;
-    }
-    .page-header p {
-        font-size: 1.125rem;
-        color: var(--text-primary);
-        max-width: 550px;
-        margin: 0 auto;
-    }
-    .briefing-card {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--card-bg);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 2rem;
-        transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-        max-width: 550px; /* Constrain width for centering */
-        width: 100%;
-        margin: 0 auto; /* Center the card */
-    }
-    .briefing-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-    .briefing-card h3 {
-        margin: 0 0 1rem 0;
-    }
-    .briefing-card p {
-        margin: 0 0 2rem 0;
-        color: var(--text-secondary);
-    }
-    .card-footer {
-        margin-top: auto;
-    }
-    .card-footer .price {
-        display: block;
-        font-size: 1.75rem;
-        font-family: 'Lora', serif;
-        font-weight: 700;
-        color: var(--accent-color);
-        margin-bottom: 1rem;
-    }
-    .card-footer .button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        background-color: var(--accent-color);
-        color: var(--background-dark);
-        padding: 0.8rem 1.5rem;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: 700;
-    }
-    .card-footer .button:hover {
-        background-color: #ffffff;
-        text-decoration: none;
-    }
-
-    /* ==========================================
-     * DESKTOP & LARGER SCREEN OVERRIDES
-     * ========================================== */
-    @media (min-width: 768px) {
-        body { font-size: 18px; }
-        main { padding: 4rem 1rem; }
-        h2 { font-size: 1.75rem; }
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcin Kov - Briefings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- <nav class="main-nav">
-        <a href="index.html" class="nav-brand">Marcin Kov</a>
-        <ul>
-            <li><a href="index.html">Thesis</a></li>
-            <li><a href="briefings.html">Briefings</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="library.html">Library</a></li> 
-        </ul>
-    </nav> -->
 
     <nav class="main-nav">
         <a href="index.html" class="nav-brand">Marcin Kov</a>
@@ -224,15 +51,45 @@
         </footer>
     </main>
 
-    <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const hamburgerButton = document.getElementById('hamburger-button');
-                const navLinks = document.getElementById('nav-links');
-                
-                hamburgerButton.addEventListener('click', function() {
-                    navLinks.classList.toggle('is-active');
-                });
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const navLinks = document.getElementById('nav-links');
+        const links = navLinks.querySelectorAll('a'); // Get all links inside the menu
+
+        // Toggle menu when hamburger is clicked
+        hamburgerButton.addEventListener('click', function() {
+            navLinks.classList.toggle('is-active');
+        });
+
+        // Close menu when any link inside it is clicked
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('is-active');
             });
-    </script>
+        });
+    });
+    </script> -->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const navLinks = document.getElementById('nav-links');
+        const links = navLinks.querySelectorAll('a'); // Get all links inside the menu
+
+        // Toggle menu when hamburger is clicked
+        hamburgerButton.addEventListener('click', function() {
+            navLinks.classList.toggle('is-active');
+        });
+
+        // Close menu when any link inside it is clicked
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('is-active');
+            });
+        });
+    });
+</script>
+
 </body>
 </html>

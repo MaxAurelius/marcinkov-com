@@ -728,3 +728,126 @@
         display: flex;
     }
 }
+
+
+/* ==========================================
+ * BRIEFINGS PAGE STYLES
+ * ========================================== */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.page-header h2 {
+    margin-bottom: 1rem;
+}
+.page-header p {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    max-width: 550px;
+    margin: 0 auto;
+}
+.briefing-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+.briefing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.briefing-card h3 {
+    margin: 0 0 1rem 0;
+}
+.briefing-card p {
+    margin: 0 0 2rem 0;
+    color: var(--text-secondary);
+}
+.card-footer {
+    margin-top: auto;
+}
+.card-footer .price {
+    display: block;
+    font-size: 1.75rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+.card-footer .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--background-dark);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.card-footer .button:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+/* ==========================================
+ * RESPONSIVE HAMBURGER MENU (FINAL)
+ * ========================================== */
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 110;
+}
+
+.hamburger-line {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--text-primary);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .main-nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        background-color: rgba(17, 34, 64, 0.85);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    
+    .main-nav ul li {
+        padding: 1rem 0;
+    }
+
+    .main-nav ul.is-active {
+        display: flex;
+    }
+}

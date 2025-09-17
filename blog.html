@@ -66,12 +66,22 @@
         &copy; 2025 Marcin Kov
     </footer>
     <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            const hamburgerButton = document.getElementById('hamburger-button');
-            const navLinks = document.getElementById('nav-links');
-            
-            hamburgerButton.addEventListener('click', function() {
+
+        document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const navLinks = document.getElementById('nav-links');
+        const links = navLinks.querySelectorAll('a'); // Get all links inside the menu
+
+        // Toggle menu when hamburger is clicked
+        hamburgerButton.addEventListener('click', function() {
             navLinks.classList.toggle('is-active');
+        });
+
+        // Close menu when any link inside it is clicked
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('is-active');
+            });
         });
     });
     </script>
