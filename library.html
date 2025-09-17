@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcin Kov // Max - Canon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="images/Napoleon.jpg">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <a href="index.html" class="nav-brand">Marcin Kov</a>
+        <ul>
+            <li><a href="index.html">Thesis</a></li>
+            <li><a href="briefings.html">Briefings</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="library.html">Library</a></li>
+        </ul>
+    </nav>
+
+    <main id="canon-container">
+        <header class="page-header">
+            <h1>Canon</h1>
+            <p class="subtitle">A foundational doctrine in sequential order. Each text provides a critical tool for navigating this world.</p>
+        </header>
+        </main>
+    
+    <footer>
+        &copy; 2025 Marcin Kov
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // The container where the entire canon will be built.
+            const container = document.getElementById('canon-container');
+            let bookCounter = 1; // Initialize a global counter for numbering.
+
+            // Fetch the doctrine from your central JSON file.
+            fetch('canon_with_covers.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Loop through each category in the JSON data.
+                    data.forEach(categoryData => {
+                        // 1. Create the <section> for the category.
+                        const section = document.createElement('section');
+                        section.className = 'book-category';
+                        
+                        // 2. Create the <h2> for the category title.
+                        const title = document.createElement('h2');
+                        title.textContent = categoryData.category;
+                        
+                        // 3. Create the <ol> that will hold the books.
+                        const bookList = document.createElement('ol');
+                        bookList.className = 'book-canon';
+                        bookList.setAttribute('start', bookCounter);
+
+                        // 4. Loop through each book in the category.
+                        categoryData.books.forEach(book => {
+                            const listItem = document.createElement('li');
+                            
+                            // Use innerHTML to construct the complex book-item structure efficiently.
+                            listItem.innerHTML = `
+                                <div class="book-item">
+                                    <img src="${book.coverUrl}" alt="Cover of ${book.title}" class="book-cover">
+                                    <div class="book-info">
+                                        <h3 class="book-title">${book.title}</h3>
+                                        <p class="book-author">${book.author}</p>
+                                        <p class="takeaway"><strong>Operational Takeaway:</strong> ${book.takeaway}</p>
+                                    </div>
+                                </div>
+                            `;
+                            bookList.appendChild(listItem);
+                        });
+
+                        // 5. Assemble the section and append it to the main container.
+                        section.appendChild(title);
+                        section.appendChild(bookList);
+                        container.appendChild(section);
+
+                        // Add a horizontal rule after each section except the last.
+                        if (data.indexOf(categoryData) < data.length - 1) {
+                            container.appendChild(document.createElement('hr'));
+                        }
+                        
+                        // Update the global counter for the next category's starting number.
+                        bookCounter += categoryData.books.length;
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching or parsing canon.json:', error);
+                    container.innerHTML += '<p style="color: red; text-align: center;">Failed to load doctrine. Check console for details.</p>';
+                });
+        });
+    </script>
+
+</body>
+</html>

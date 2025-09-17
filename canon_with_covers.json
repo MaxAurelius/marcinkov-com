@@ -1,0 +1,194 @@
+[
+  {
+    "category": "Phase I: The Code of the Ancients \u2013 The World of the Polis and the Republic",
+    "books": [
+      {
+        "title": "La Cit\u00e9 Antique",
+        "author": "Fustel de Coulanges",
+        "coverUrl": "https://books.google.com/books/content?id=hv3rrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The foundational religious and social structure of the ancient city, revealing the primacy of ritual and family in early civilization."
+      },
+      {
+        "title": "The Iliad",
+        "author": "Homer",
+        "coverUrl": "https://books.google.com/books/content?id=sos0paw_-cEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The cultural source code of the West. Establishes the concepts of glory (kleos), honor (tim\u0113), fate, and the raw, violent nature of the heroic ideal."
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "coverUrl": "https://books.google.com/books/content?id=aPwPjVIxbGQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The theoretical blueprint for the ideal city (polis), defining justice and the role of the ruler. The foundation of Western political thought."
+      },
+      {
+        "title": "The Oresteia",
+        "author": "Aeschylus",
+        "coverUrl": "https://books.google.com/books/content?id=x9tNAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "Dramatizes the transition from personal blood-feud justice to the civic, legal justice of the polis. It is the birth of law."
+      },
+      {
+        "title": "The History of the Peloponnesian War",
+        "author": "Thucydides",
+        "coverUrl": "https://books.google.com/books/content?id=kshgDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The ultimate reality check. Demonstrates that fear, honor, and interest are the true drivers of state action, founding political realism."
+      },
+      {
+        "title": "Plutarch's Greek Lives",
+        "author": "Plutarch",
+        "coverUrl": "https://books.google.com/books/content?id=kSUJAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Provides the human element to theory and history, showing how legendary figures embodied the principles of their time."
+      },
+      {
+        "title": "Selected Works",
+        "author": "Cicero",
+        "coverUrl": "https://books.google.com/books/content?id=tedPgiafOd8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The bridge from Greece to Rome, synthesizing Greek philosophy with Roman republican duty to govern a massive, multicultural republic."
+      }
+    ]
+  },
+  {
+    "category": "Phase II: The Moral Revolution",
+    "books": [
+      {
+        "title": "The Bible (King James Version)",
+        "author": "Various Authors",
+        "coverUrl": "https://books.google.com/books/content?id=8RnmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The great disruption. Introduces a 'slave morality' of humility and universal love that overturned the classical 'master morality' of strength and glory."
+      }
+    ]
+  },
+  {
+    "category": "Phase III: The Modern Power Matrix \u2013 The Prince and the State",
+    "books": [
+      {
+        "title": "Discourses on Livy",
+        "author": "Niccol\u00f2 Machiavelli",
+        "coverUrl": "https://books.google.com/books/content?id=Km5itjMehYUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A look back to the Romans to understand the functional mechanics of a republic, providing a blueprint for long-term stability."
+      },
+      {
+        "title": "The Prince",
+        "author": "Niccol\u00f2 Machiavelli",
+        "coverUrl": "https://books.google.com/books/content?id=MugHAy_Atz4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Divorces politics from Christian morality to create a practical, effective science of statecraft for acquiring and maintaining power."
+      },
+      {
+        "title": "Leviathan",
+        "author": "Thomas Hobbes",
+        "coverUrl": "https://books.google.com/books/content?id=v54TEXoypd4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Argues for an all-powerful sovereign (the state) as the only rational alternative to the anarchy and chaos of man's natural state."
+      },
+      {
+        "title": "Second Treatise of Government",
+        "author": "John Locke",
+        "coverUrl": "https://books.google.com/books/content?id=oOjoGkmMWUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The direct counter-argument to Hobbes, laying the groundwork for limited government, consent of the governed, and natural rights."
+      },
+      {
+        "title": "The Social Contract",
+        "author": "Jean-Jacques Rousseau",
+        "coverUrl": "https://books.google.com/books/content?id=GK1GAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Presents the radical and dangerous idea of the 'General Will,' a concept that has fueled both democratic and totalitarian movements."
+      }
+    ]
+  },
+  {
+    "category": "Phase IV: The Great Experiment \u2013 Building the American Republic",
+    "books": [
+      {
+        "title": "The Federalist Papers",
+        "author": "Hamilton, Madison, Jay",
+        "coverUrl": "https://books.google.com/books/content?id=S9vTywEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The real-time operational argument and marketing campaign for the US Constitution, explaining the logic of the system."
+      },
+      {
+        "title": "The Constitution of the United States",
+        "author": "Founding Fathers",
+        "coverUrl": "https://books.google.com/books/content?id=8-0LngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The architectural blueprint for the American republic, a masterclass in structural incentives and the containment of power."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "coverUrl": "https://books.google.com/books/content?id=obyzxRmY7nEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The most brilliant outside analysis of the American experiment, diagnosing its strengths and potential weaknesses with stunning foresight."
+      }
+    ]
+  },
+  {
+    "category": "Phase V: The Grammar of Conflict \u2013 Codifying War",
+    "books": [
+      {
+        "title": "On War",
+        "author": "Carl von Clausewitz",
+        "coverUrl": "https://books.google.com/books/content?id=iY4yZEkphNgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The foundational philosophical text of modern military strategy, defining war as the 'continuation of policy by other means'."
+      },
+      {
+        "title": "Napoleon: A Biography",
+        "author": "Various (e.g., Andrew Roberts)",
+        "coverUrl": "https://books.google.co.uk/googlebooks/images/no_cover_thumb.gif",
+        "takeaway": "The human embodiment of Clausewitz's principles. The master of modern warfare and the archetype of boundless ambition."
+      },
+      {
+        "title": "The 33 Strategies of War",
+        "author": "Robert Greene",
+        "coverUrl": "https://books.google.com/books/content?id=EC9NEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Distills timeless principles of conflict into a practical, modern manual for the application of strategic theory."
+      }
+    ]
+  },
+  {
+    "category": "Phase VI: Mastering the Modern Battlefield \u2013 Mind, Media, and Morality",
+    "books": [
+      {
+        "title": "Discourse on the Method",
+        "author": "Ren\u00e9 Descartes",
+        "coverUrl": "https://books.google.com/books/content?id=xFowBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The starting point of modern rationalism ('I think, therefore I am'), establishing the individual mind as the source of certainty."
+      },
+      {
+        "title": "On the Genealogy of Morality",
+        "author": "Friedrich Nietzsche",
+        "coverUrl": "https://books.google.com/books/content?id=AFJLi7wk3X8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A philosophical bomb that deconstructs the Judeo-Christian moral framework, enabling first-principles thinking about values."
+      },
+      {
+        "title": "The Mimetic Theory",
+        "author": "Ren\u00e9 Girard",
+        "coverUrl": "https://books.google.com/books/content?id=Nts1zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A powerful modern tool for understanding that human desire is copied, not original, which is the root cause of all conflict and rivalry."
+      },
+      {
+        "title": "The General Theory of Employment, Interest and Money",
+        "author": "John Maynard Keynes",
+        "coverUrl": "https://books.google.com/books/content?id=xpw-96rynOcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The economic operating system for the modern state; the most influential justification for managed, interventionist economies."
+      },
+      {
+        "title": "The Laws of Human Nature",
+        "author": "Robert Greene",
+        "coverUrl": "https://books.google.com/books/content?id=geqQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A practical manual on the applied psychology of influence and social dynamics, essential for any leader."
+      },
+      {
+        "title": "Trust Me, I'm Lying",
+        "author": "Ryan Holiday",
+        "coverUrl": "https://books.google.com/books/content?id=nHU7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A case study in how narratives are manufactured and weaponized in the modern information age battlefield of media."
+      },
+      {
+        "title": "Clear Thinking",
+        "author": "Shane Parrish",
+        "coverUrl": "https://books.google.com/books/content?id=80GlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A meta-skill framework for making superior decisions after absorbing complex and conflicting information."
+      },
+      {
+        "title": "The Beginning of Infinity",
+        "author": "David Deutsch",
+        "coverUrl": "https://books.google.com/books/content?id=aykAsxPIwW0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A capstone argument about the nature of progress, knowledge, and humanity's potential, providing an optimistic framework for the future."
+      }
+    ]
+  }
+]

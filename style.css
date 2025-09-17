@@ -546,3 +546,61 @@
     border-radius: 8px;
     border: 1px solid var(--border-color);
 }
+
+
+/* ==========================================
+ * LIBRARY PAGE STYLES
+ * ========================================== */
+
+.book-canon {
+    list-style: none;
+    counter-reset: canon-counter;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Style the list item container */
+.book-canon li {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 3.5rem; /* Make space for the number */
+}
+
+/* Style the custom counter */
+.book-canon li::before {
+    counter-increment: canon-counter;
+    content: counter(canon-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--border-color);
+    line-height: 1;
+    z-index: 1;
+}
+
+/* Make sure the book-item itself is full width inside the li */
+.book-canon .book-item {
+    width: 100%;
+}
+
+/* New rule for the takeaway text */
+.takeaway {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    font-style: italic;
+    border-left: 2px solid var(--border-color);
+    padding-left: 0.75rem;
+}
+
+.takeaway strong {
+    color: var(--accent-color);
+    font-style: normal;
+}
