@@ -240,11 +240,18 @@
         top: 0;
         z-index: 100;
     }
-    .main-nav .nav-brand {
+    /* .main-nav .nav-brand {
         font-family: 'Lora', serif;
         font-weight: 700;
         font-size: 1.25rem;
         color: var(--heading-color);
+    } */
+    .main-nav .nav-brand {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--heading-color);
+    white-space: nowrap; /* ADD THIS LINE */
     }
     .main-nav .nav-brand:hover {
         text-decoration: none;
@@ -603,4 +610,121 @@
 .takeaway strong {
     color: var(--accent-color);
     font-style: normal;
+}
+
+
+/* ==========================================
+ * CALL TO MISSION STYLES
+ * ========================================== */
+
+.call-to-mission {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2.5rem; /* Creates space below the thesis */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-to-mission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.call-to-mission h4 {
+    margin: 0 0 0.75rem 0;
+    font-family: 'Lora', serif;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.call-to-mission p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 50ch; /* 50 characters wide */
+    margin: 0 auto 1.5rem auto;
+}
+
+.mission-button {
+    display: inline-block;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mission-button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    text-decoration: none;
+}
+
+/* ==========================================
+ * RESPONSIVE HAMBURGER MENU
+ * ========================================== */
+
+/* Style for the hamburger button */
+.hamburger-menu {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 110; /* Ensures it's on top */
+}
+
+.hamburger-line {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--text-primary);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* --- Mobile View (< 768px) --- */
+@media (max-width: 768px) {
+    /* Show the hamburger button */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide the original nav links list */
+    .main-nav ul {
+        display: none;
+        position: absolute;
+        top: 60px; /* Position below the nav bar */
+        left: 0;
+        width: 100%;
+        background-color: var(--card-bg);
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        text-align: center;
+
+        background-color: rgba(17, 34, 64, 0.85);
+
+        -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+        backdrop-filter: blur(10px); /* The "frosted glass" effect */
+    }
+    
+    .main-nav ul li {
+        padding: 1rem 0;
+    }
+
+    /* This class will be toggled by JavaScript */
+    .main-nav ul.is-active {
+        display: flex;
+    }
 }

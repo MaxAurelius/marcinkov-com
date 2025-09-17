@@ -13,15 +13,31 @@
 </head>
 <body>
 
+    <!-- <nav class="main-nav"> -->
+        <!-- <a href="index.html" class="nav-brand">Marcin Kov</a> -->
+        <!-- <ul> -->
+            <!-- <li><a href="index.html">Thesis</a></li> -->
+            <!-- <li><a href="briefings.html">Briefings</a></li> -->
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <!-- <li><a href="library.html">Library</a></li>  -->
+<!--  -->
+        <!-- </ul> -->
+    <!-- </nav> -->
+
     <nav class="main-nav">
         <a href="index.html" class="nav-brand">Marcin Kov</a>
-        <ul>
+
+        <button class="hamburger-menu" id="hamburger-button" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul id="nav-links">
             <li><a href="index.html">Thesis</a></li>
             <li><a href="briefings.html">Briefings</a></li>
-            <!-- <li><a href="https://blog.marcinkov.com/" target="_blank" rel="noopener noreferrer">Blog</a></li> -->
             <li><a href="blog.html">Blog</a></li>
             <li><a href="library.html">Library</a></li> 
-
         </ul>
     </nav>
 
@@ -30,15 +46,27 @@
             <img src="images/Napoleon.jpg" alt="Marcin Kov" class="author-icon">
             <div class="author-info">
                 <h1>Marcin Kov // Max </h1>
-                <p>Physicist & Engineer | Building Tools for Complex Systems</p>
+                <!-- <p>Physicist & Engineer | Building Tools for Complex Systems</p> -->
+                <p>Founder, The American Frontier</p>
+
             </div>
         </header>
 
         <section id="thesis">
             <h2>Thesis</h2>
             <blockquote style="border-left: 3px solid var(--accent-color); padding-left: 1.5rem; margin-left: 0; font-size: 1.1em; font-style: italic;">
-                I build robust systems to solve high-stakes operational problems. From ensuring the stability of a live satellite at ESA to architecting satellite ground station optimizer from scratch, my work is focused on turning complexity into clarity and delivering systems that work in the real world.            </blockquote>  
+                Our world is not moving fast enough. I am building the foundational systems for our future, a mission too vast for any single discipline. My method is to unite the three pillars of progress: the engineers who create, the capital that builds, and the policymakers who clear the path. There is only one place on Earth with the ambition, talent, and risk-tolerance to see this through: America. That is why I am here.
         </section>
+
+        <section id="call-to-mission-section">
+            <div class="call-to-mission">
+                <h4>The Mission</h4>
+                <p>This thesis is now an active operation. <em>The American Frontier</em> is the curated society being built for the leaders dedicated to this cause.</p>
+                <a href="https://theamericanfrontier.org" class="mission-button" target="_blank" rel="noopener noreferrer">
+                    Explore The American Frontier &rarr;
+                </a>
+            </div>
+</section>
 
         <hr>
 
@@ -148,7 +176,7 @@
 
     <div class="portfolio-card">
         <h3>Full-Stack ML System | Real-Time Fraud Sandbox</h3>
-            <p class="project-role">Developer & Architect (1-Week Sprint)</p>
+            <p class="project-role">Developer & Architect</p>
             
             <!-- <video class="project-video" autoplay loop muted playsinline poster="images/taktile-poster.jpg">
                 <source src="images/taktile-demo.mp4" type="video/mp4">
@@ -308,6 +336,15 @@
 
     // Initialize the PCB carousel
     initCarousel('#pcb-carousel');
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburgerButton.addEventListener('click', function() {
+        navLinks.classList.toggle('is-active');
+    });
+    });
 
     </script>
 

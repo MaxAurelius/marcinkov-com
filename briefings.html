@@ -6,6 +6,7 @@
 <title>Marcin Kov - Briefings</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
     /* THIS CSS IS EMBEDDED TO PREVENT ANY BROWSER CACHING ERRORS */
@@ -174,9 +175,26 @@
 </head>
 <body>
 
-    <nav class="main-nav">
+    <!-- <nav class="main-nav">
         <a href="index.html" class="nav-brand">Marcin Kov</a>
         <ul>
+            <li><a href="index.html">Thesis</a></li>
+            <li><a href="briefings.html">Briefings</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="library.html">Library</a></li> 
+        </ul>
+    </nav> -->
+
+    <nav class="main-nav">
+        <a href="index.html" class="nav-brand">Marcin Kov</a>
+
+        <button class="hamburger-menu" id="hamburger-button" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul id="nav-links">
             <li><a href="index.html">Thesis</a></li>
             <li><a href="briefings.html">Briefings</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -205,5 +223,16 @@
             &copy; 2025 Marcin Kov
         </footer>
     </main>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburgerButton = document.getElementById('hamburger-button');
+                const navLinks = document.getElementById('nav-links');
+                
+                hamburgerButton.addEventListener('click', function() {
+                    navLinks.classList.toggle('is-active');
+                });
+            });
+    </script>
 </body>
 </html>
