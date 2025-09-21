@@ -5,7 +5,7 @@
       {
         "title": "La Cit\u00e9 Antique",
         "author": "Fustel de Coulanges",
-        "coverUrl": "https://books.google.com/books/content?id=hv3rrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "coverUrl": "https://books.google.com/books/content?id=0ikgzAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
         "takeaway": "The foundational religious and social structure of the ancient city, revealing the primacy of ritual and family in early civilization."
       },
       {
@@ -15,16 +15,16 @@
         "takeaway": "The cultural source code of the West. Establishes the concepts of glory (kleos), honor (tim\u0113), fate, and the raw, violent nature of the heroic ideal."
       },
       {
-        "title": "The Republic",
-        "author": "Plato",
-        "coverUrl": "https://books.google.com/books/content?id=aPwPjVIxbGQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        "takeaway": "The theoretical blueprint for the ideal city (polis), defining justice and the role of the ruler. The foundation of Western political thought."
-      },
-      {
         "title": "The Oresteia",
         "author": "Aeschylus",
         "coverUrl": "https://books.google.com/books/content?id=x9tNAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
         "takeaway": "Dramatizes the transition from personal blood-feud justice to the civic, legal justice of the polis. It is the birth of law."
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "coverUrl": "https://books.google.com/books/content?id=aPwPjVIxbGQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The theoretical blueprint for the ideal city (polis), defining justice and the role of the ruler. The foundation of Western political thought."
       },
       {
         "title": "The History of the Peloponnesian War",
@@ -37,6 +37,12 @@
         "author": "Plutarch",
         "coverUrl": "https://books.google.com/books/content?id=kSUJAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         "takeaway": "Provides the human element to theory and history, showing how legendary figures embodied the principles of their time."
+      },
+      {
+        "title": "Fall of the Roman Republic",
+        "author": "Plutarch",
+        "coverUrl": "https://books.google.com/books/content?id=q3EnmyZ25VoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A chronicle of ambition and decay. Plutarch details how oversized personalities and systemic failures led to the collapse of the Roman Republic, providing a timeless warning on civil war and political disintegration."
       },
       {
         "title": "Selected Works",
@@ -98,7 +104,7 @@
       {
         "title": "The Federalist Papers",
         "author": "Hamilton, Madison, Jay",
-        "coverUrl": "https://books.google.com/books/content?id=S9vTywEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "coverUrl": "https://books.google.com/books/content?id=7K28oGlqsRAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         "takeaway": "The real-time operational argument and marketing campaign for the US Constitution, explaining the logic of the system."
       },
       {
@@ -108,10 +114,16 @@
         "takeaway": "The architectural blueprint for the American republic, a masterclass in structural incentives and the containment of power."
       },
       {
-        "title": "Democracy in America",
+        "title": "De la d\u00e9mocratie en Am\u00e9rique",
         "author": "Alexis de Tocqueville",
-        "coverUrl": "https://books.google.com/books/content?id=obyzxRmY7nEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "coverUrl": "https://books.google.com/books/content?id=U5s6AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         "takeaway": "The most brilliant outside analysis of the American experiment, diagnosing its strengths and potential weaknesses with stunning foresight."
+      },
+      {
+        "title": "Franklin & Washington: The Founding Partnership",
+        "author": "Edward J. Larson",
+        "coverUrl": "https://books.google.com/books/content?id=HZMEAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "An analysis of the symbiotic partnership between the ultimate diplomat and the ultimate general, showing how their combined strategic and political genius was the central axis of the American Revolution."
       }
     ]
   },
@@ -125,10 +137,34 @@
         "takeaway": "The foundational philosophical text of modern military strategy, defining war as the 'continuation of policy by other means'."
       },
       {
-        "title": "Napoleon: A Biography",
-        "author": "Various (e.g., Andrew Roberts)",
-        "coverUrl": "https://books.google.co.uk/googlebooks/images/no_cover_thumb.gif",
+        "title": "The Mind of Napoleon",
+        "author": "J. Christopher Herold",
+        "coverUrl": "https://books.google.com/books/content?id=843EDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A direct look into the Emperor's mind through his own letters and decrees. The source code for his philosophy on power, war, and human nature."
+      },
+      {
+        "title": "Napoleon",
+        "author": "David Bell / Andrew Roberts",
+        "coverUrl": "https://books.google.com/books/content?id=oNeeCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         "takeaway": "The human embodiment of Clausewitz's principles. The master of modern warfare and the archetype of boundless ambition."
+      },
+      {
+        "title": "M\u00e9moires du Baron Fain",
+        "author": "Baron Fain",
+        "coverUrl": "https://books.google.com/books/content?id=NJTSAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "An insider's raw account from Napoleon's cabinet, revealing the administrative and logistical machinery behind the Emperor's campaigns and political machinations."
+      },
+      {
+        "title": "The Campaigns of Napoleon",
+        "author": "David G. Chandler",
+        "coverUrl": "https://books.google.com/books/content?id=hNYWXeVcbkMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The definitive operational and tactical analysis of Napoleonic warfare. The textbook for understanding how the Emperor of Battles revolutionized military art."
+      },
+      {
+        "title": "The Fifteen Decisive Battles of the World",
+        "author": "Edward Creasy",
+        "coverUrl": "https://books.google.com/books/content?id=JpMsskzt7aUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "An analysis of historical pivot points, demonstrating how singular moments of strategic genius or failure alter the course of history."
       },
       {
         "title": "The 33 Strategies of War",
@@ -154,10 +190,16 @@
         "takeaway": "A philosophical bomb that deconstructs the Judeo-Christian moral framework, enabling first-principles thinking about values."
       },
       {
-        "title": "The Mimetic Theory",
+        "title": "Things Hidden Since the Foundation of the World",
         "author": "Ren\u00e9 Girard",
-        "coverUrl": "https://books.google.com/books/content?id=Nts1zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "coverUrl": "https://books.google.com/books/content?id=LVHUAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         "takeaway": "A powerful modern tool for understanding that human desire is copied, not original, which is the root cause of all conflict and rivalry."
+      },
+      {
+        "title": "I See Satan Fall Like Lightning",
+        "author": "Ren\u00e9 Girard",
+        "coverUrl": "https://books.google.com/books/content?id=wUB6Q_8e0PcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Girard's synthesis, linking mimetic theory directly to Judeo-Christian scripture to argue that the Bible is the ultimate text for revealing and dismantling the scapegoating mechanism that founds all human culture."
       },
       {
         "title": "The General Theory of Employment, Interest and Money",
@@ -172,10 +214,169 @@
         "takeaway": "A practical manual on the applied psychology of influence and social dynamics, essential for any leader."
       },
       {
+        "title": "The Beginning of Infinity",
+        "author": "David Deutsch",
+        "coverUrl": "https://books.google.com/books/content?id=aykAsxPIwW0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A capstone argument about the nature of progress, knowledge, and humanity's potential, providing an optimistic framework for the future."
+      }
+    ]
+  },
+  {
+    "category": "Phase VII: Forging the Industrial Empire \u2013 The Titans of Capital",
+    "books": [
+      {
+        "title": "Benjamin Franklin: An American Life",
+        "author": "Walter Isaacson",
+        "coverUrl": "https://books.google.com/books/content?id=AfZOIC8hVWYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "Case study of the archetypal American founder: a master of media, science, politics, and capital, who bent a new world to his will."
+      },
+      {
+        "title": "Titan: The Life of John D. Rockefeller, Sr.",
+        "author": "Ron Chernow",
+        "coverUrl": "https://books.google.com/books/content?id=0ycaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The manual for achieving total market domination through ruthless efficiency, strategic consolidation, and the weaponization of capital."
+      },
+      {
+        "title": "The House of Morgan",
+        "author": "Ron Chernow",
+        "coverUrl": "https://books.google.com/books/content?id=XoUpAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "An analysis of the construction of modern finance and how a private dynasty operated with the power of a sovereign state."
+      },
+      {
+        "title": "The Tycoons",
+        "author": "Charles R. Morris",
+        "coverUrl": "https://books.google.com/books/content?id=nDyoa2rMbSIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "How a handful of men like Carnegie and Rockefeller hijacked the raw materials of a continent to build America's industrial backbone."
+      },
+      {
+        "title": "The Maverick and His Machine: Thomas Watson, Sr. and the Making of IBM",
+        "author": "Kevin Maney",
+        "coverUrl": "https://books.google.com/books/content?id=G8OdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A masterclass in creating a corporate culture so powerful it becomes a secular religion, driving relentless execution and market dominance."
+      },
+      {
+        "title": "Made in America",
+        "author": "Sam Walton",
+        "coverUrl": "https://books.google.com/books/content?id=ggN9Kp8UVfwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The operating manual for scaling a business through relentless optimization, frugality, and a deep understanding of the customer."
+      },
+      {
+        "title": "Made in Japan: Akio Morita and Sony",
+        "author": "Akio Morita",
+        "coverUrl": "https://books.google.com/books/content?id=b03zSA04tBwC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "How to build a global brand from the ashes of war by combining technological innovation with brilliant marketing and cultural adaptation."
+      },
+      {
+        "title": "Ogilvy on Advertising",
+        "author": "David Ogilvy",
+        "coverUrl": "https://books.google.com/books/content?id=67FPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The tactical field guide for manufacturing desire and building brands that command loyalty and pricing power."
+      }
+    ]
+  },
+  {
+    "category": "Phase VIII: The Digital Principality \u2013 Code, Capital, and the New Sovereigns",
+    "books": [
+      {
+        "title": "Technological Revolutions and Financial Capital",
+        "author": "Carlota Perez",
+        "coverUrl": "https://books.google.com/books/content?id=QPRgvx_cD-MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The macro-framework for understanding the predictable 50-60 year cycles of technological disruption, enabling you to identify and ride the next wave."
+      },
+      {
+        "title": "The Innovator's Dilemma",
+        "author": "Clayton M. Christensen",
+        "coverUrl": "https://books.google.com/books/content?id=K6FrJTWeUssC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The blueprint for corporate assassination. Explains why successful companies are structurally incapable of seeing their own destruction, and how to exploit it."
+      },
+      {
+        "title": "High Output Management",
+        "author": "Andrew S. Grove",
+        "coverUrl": "https://books.google.com/books/content?id=3j8si29hddwC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The engineer's approach to management from the CEO of Intel. A system for optimizing information flow and execution in a high-growth organization."
+      },
+      {
+        "title": "Softwar: An Intimate Portrait of Larry Ellison and Oracle",
+        "author": "Matthew Symonds",
+        "coverUrl": "https://books.google.com/books/content?id=tpquCcasMDQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A raw look at the application of Sun Tzu's principles to the software business. Winning through information warfare and psychological dominance."
+      },
+      {
+        "title": "Steve Jobs",
+        "author": "Walter Isaacson",
+        "coverUrl": "https://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A case study in bending reality through sheer force of will, product obsession, and the masterful construction of a corporate narrative."
+      },
+      {
+        "title": "The Founders",
+        "author": "Jimmy Soni",
+        "coverUrl": "https://books.google.com/books/content?id=-5U8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The origin story of the 'PayPal Mafia' and the playbook for assembling a concentration of talent so potent it reshapes an entire industry."
+      },
+      {
+        "title": "Zero to One",
+        "author": "Peter Thiel",
+        "coverUrl": "https://books.google.com/books/content?id=M22fAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The modern gospel of monopoly. Competition is for losers; the only path to victory is creating a new category you can own completely."
+      },
+      {
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "coverUrl": "https://books.google.com/books/content?id=_LFSBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "An exploration of extreme risk tolerance, first-principles engineering, and the use of grand, civilization-level goals to attract capital and talent."
+      },
+      {
+        "title": "Skunk Works",
+        "author": "Ben R. Rich & Leo Janos",
+        "coverUrl": "https://books.google.com/books/content?id=NyU3EQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The definitive guide to building small, elite, autonomous teams to solve impossible problems under extreme secrecy and pressure."
+      },
+      {
+        "title": "The Sovereign Individual",
+        "author": "James Dale Davidson & William Rees-Mogg",
+        "coverUrl": "https://books.google.com/books/content?id=gxDADwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A prophetic thesis on the information revolution's power to demolish the nation-state, predicting the rise of a cognitive elite who operate beyond borders and traditional laws."
+      }
+    ]
+  },
+  {
+    "category": "Phase IX: The Operator's Toolkit \u2013 Personal Sovereignty and Execution",
+    "books": [
+      {
+        "title": "Meditations",
+        "author": "Marcus Aurelius",
+        "coverUrl": "https://books.google.com/books/content?id=VVsmU-4YwFsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The internal framework for maintaining absolute composure, discipline, and effectiveness in the face of chaos. The Emperor's OS."
+      },
+      {
+        "title": "Poor Charlie's Almanack",
+        "author": "Edited by Peter D. Kaufman",
+        "coverUrl": "https://books.google.co.uk/googlebooks/images/no_cover_thumb.gif",
+        "takeaway": "The operating system for the mind. How to build a 'latticework of mental models' to make consistently superior decisions under uncertainty."
+      },
+      {
+        "title": "Skin in the Game",
+        "author": "Nassim Nicholas Taleb",
+        "coverUrl": "https://books.google.com/books/content?id=oK42DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A powerful filter for reality. Discard all advice from those who do not bear the consequences of their opinions. Trust only what is costly."
+      },
+      {
+        "title": "Never Split the Difference",
+        "author": "Chris Voss",
+        "coverUrl": "https://books.google.com/books/content?id=PkPRswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A manual for dominating negotiations not through aggression, but through tactical empathy and the controlled manipulation of human psychology."
+      },
+      {
+        "title": "Thank You For Arguing",
+        "author": "Jay Heinrichs",
+        "coverUrl": "https://books.google.com/books/content?id=97LQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A modern update on classical rhetoric, providing the tools to control any argument, frame every debate, and persuade any audience."
+      },
+      {
         "title": "Trust Me, I'm Lying",
         "author": "Ryan Holiday",
         "coverUrl": "https://books.google.com/books/content?id=nHU7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        "takeaway": "A case study in how narratives are manufactured and weaponized in the modern information age battlefield of media."
+        "takeaway": "A confession and a manual for how narratives are manufactured and weaponized in the modern information age battlefield of media."
       },
       {
         "title": "Clear Thinking",
@@ -184,10 +385,57 @@
         "takeaway": "A meta-skill framework for making superior decisions after absorbing complex and conflicting information."
       },
       {
-        "title": "The Beginning of Infinity",
-        "author": "David Deutsch",
-        "coverUrl": "https://books.google.com/books/content?id=aykAsxPIwW0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        "takeaway": "A capstone argument about the nature of progress, knowledge, and humanity's potential, providing an optimistic framework for the future."
+        "title": "Endurance: Shackleton's Incredible Voyage",
+        "author": "Alfred Lansing",
+        "coverUrl": "https://books.google.com/books/content?id=dUh_AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "The ultimate case study in crisis leadership. How to maintain order, morale, and mission focus when every variable is hostile and survival is the only metric."
+      },
+      {
+        "title": "The Art of Acting",
+        "author": "Stella Adler",
+        "coverUrl": "https://books.google.com/books/content?id=yGtMlEgYdRAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A manual for mastering self-presentation. Acting is the art of controlling your own state and projecting a chosen reality, a critical skill for any leader who must command a stage."
+      }
+    ]
+  },
+  {
+    "category": "The Canon: Cultural Literacy & Foundational Narratives",
+    "books": [
+      {
+        "title": "The Fountainhead",
+        "author": "Ayn Rand",
+        "coverUrl": "https://books.google.com/books/content?id=Go9kAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A philosophical novel championing the individual creator against the collective. The moral justification for radical non-conformity."
+      },
+      {
+        "title": "Atlas Shrugged",
+        "author": "Ayn Rand",
+        "coverUrl": "https://books.google.com/books/content?id=QqBiAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "takeaway": "A political and economic manifesto arguing that productive geniuses are the engines of civilization, which collapses without them."
+      },
+      {
+        "title": "Le Rouge et le Noir",
+        "author": "Stendhal",
+        "coverUrl": "https://books.google.com/books/content?id=5x6pDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A novelistic study of pure ambition and the psychological costs of navigating rigid social hierarchies in post-Napoleonic France."
+      },
+      {
+        "title": "Maximes",
+        "author": "Fran\u00e7ois de La Rochefoucauld",
+        "coverUrl": "https://books.google.com/books/content?id=TFhpAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "A collection of cynical and brutally honest aphorisms that strip away pretensions to reveal self-interest as the root of human behavior."
+      },
+      {
+        "title": "Paradise",
+        "author": "Dante Alighieri",
+        "coverUrl": "https://books.google.com/books/content?id=kzpbBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The conclusion to the 'Divine Comedy,' mapping the celestial hierarchy and the ultimate structure of a divinely ordered universe. A cornerstone of the Western metaphysical imagination."
+      },
+      {
+        "title": "Faust",
+        "author": "Johann Wolfgang von Goethe",
+        "coverUrl": "https://books.google.com/books/content?id=_Sbju4F0AVAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "takeaway": "The archetypal story of ultimate ambition: a pact with demonic forces in exchange for limitless knowledge and power. A foundational myth on the nature and peril of human striving."
       }
     ]
   }
