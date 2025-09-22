@@ -851,3 +851,46 @@
         display: flex;
     }
 }
+
+/* ==========================================
+ * THESIS SECTION STYLES
+ * ========================================== */
+.thesis-content p {
+    color: var(--text-primary);
+}
+
+.roman-pillars {
+    list-style: none; /* Remove default bullet points/numbers */
+    counter-reset: pillars-counter; /* Create our custom counter */
+    padding-left: 0;
+    margin: 2.5rem 0;
+}
+
+.roman-pillars li {
+    position: relative;
+    padding-left: 3.5rem; /* Create space for the large numeral */
+    margin-bottom: 1.5rem; /* Add space between each pillar */
+    color: var(--text-primary); /* Ensure text color is correct */
+}
+
+/* This is where the custom numeral is created and styled */
+.roman-pillars li::before {
+    counter-increment: pillars-counter; /* Add 1 to the counter for each list item */
+    content: counter(pillars-counter, upper-roman); /* Display the counter as a Roman numeral */
+    
+    /* --- Visual styling, adapted from your Library page --- */
+    position: absolute;
+    left: 0;
+    top: -0.1em; /* Fine-tune vertical alignment */
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--border-color); /* The subtle, dark blue color you wanted */
+    line-height: 1;
+}
+
+/* New rule for the button container */
+#call-to-mission-section {
+    text-align: center;
+    margin-top: 2.5rem;
+}
