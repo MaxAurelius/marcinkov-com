@@ -898,3 +898,22 @@
 .center-text {
     text-align: center;
 }
+
+
+#call-to-mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* Controls the space between the two buttons */
+    flex-wrap: wrap;
+}
+
+.mission-group {
+    text-align: center;
+}
+
+.mission-subtitle {
+    color: white;
+    font-style: italic;
+    margin-top: 1rem; /* Space between the button and the text below it */
+}
