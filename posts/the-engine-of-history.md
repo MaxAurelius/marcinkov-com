@@ -21,8 +21,6 @@ Napoleon shows us that belief decides who wins. At the Battle of Marengo, by 3:0
 
 The battle was lost, but more importantly, his army’s spirit was broken. Then, fresh troops arrived. Napoleon used them to turn a spark of hope into a fire. He rode among his scared soldiers and injected them with his own belief. He stopped the retreat and attacked. The enemy collapsed instantly. At Marengo, Napoleon proved his own rule: "More battles are lost by a loss of faith than a loss of blood."
 
-**The Conclusion**
-
 We often think that resources create success. We think we need the money, the team, or the plan before we can start. These stories tell us the opposite is true.
 
 Belief comes first. It is the tangible asset that attracts the money, recruits the team, and fuels the plan. Whether you are starting a religion, leading an army, or building a company, the mechanism is the same. You must believe in the future you are building so intensely that it becomes real for everyone else.
